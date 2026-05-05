@@ -329,15 +329,16 @@ export default function MainContent() {
                     </div>
 
                     <div className={styles.projectMetaRow}>
-                        <span className={styles.projectPill}>React</span>
-                        <span className={styles.projectPill}>Framer</span>
-                        <span className={styles.projectPill}>MongoDB</span>
+                        <span className={styles.projectPill}>HTML</span>
+                        <span className={styles.projectPill}>CSS</span>
+                        <span className={styles.projectPill}>JavaScript</span>
+                        <span className={styles.projectPill}>PHP</span>
                     </div>
 
                     <div className={styles.projectBody}>
-                        <h3 className={styles.projectTitle}>Review Hero</h3>
+                        <h3 className={styles.projectTitle}>HONDA CARS DASMARINAS</h3>
                         <p className={styles.projectDescription}>
-                            A webapp created to help students study through digital flashcards and quizzes to make learning more effective and accessible.
+                          A web application for Honda Cars Dasmariñas that showcases vehicles with detailed specs and downloadable brochures, while enabling customers to book PMS and diagnostic services online for a seamless dealership experience.
                         </p>
                         <a className={styles.projectLink} href="https://www.hondacarsdasmarinas.com/" target="_blank" rel="noopener noreferrer">
                             <span className={styles.projectLinkIcon} aria-hidden="true">
