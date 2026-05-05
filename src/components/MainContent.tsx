@@ -5,7 +5,7 @@ import bg from '../assets/bg3.jpg';
 import cv from '../assets/Resume_DavenWaay.pdf';
 import Evt from '../assets/EventRegistration.png';
 import tnt from '../assets/tnt/tntThumbnail.png';
-import ReviewHero from '../assets/reviewHero.png';
+import honda from '../assets/hondadasma.jpg';
 import Hacktivate from '../assets/hacktivate.png';
 import { useEffect } from 'react';
 
@@ -322,6 +322,35 @@ export default function MainContent() {
                 style={{ backgroundImage: `url(${bg})` }}
             >
                 <h1 className={styles.projectsTitle}>My Portfolio</h1>
+                
+                <div className={styles.projectCard}>
+                    <div className={styles.projectHero}>
+                        <img src={honda} alt="Honda Dasma" className={styles.projectHeroImage} />
+                    </div>
+
+                    <div className={styles.projectMetaRow}>
+                        <span className={styles.projectPill}>React</span>
+                        <span className={styles.projectPill}>Framer</span>
+                        <span className={styles.projectPill}>MongoDB</span>
+                    </div>
+
+                    <div className={styles.projectBody}>
+                        <h3 className={styles.projectTitle}>Review Hero</h3>
+                        <p className={styles.projectDescription}>
+                            A webapp created to help students study through digital flashcards and quizzes to make learning more effective and accessible.
+                        </p>
+                        <a className={styles.projectLink} href="https://www.hondacarsdasmarinas.com/" target="_blank" rel="noopener noreferrer">
+                            <span className={styles.projectLinkIcon} aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M14 3h7v7"></path>
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M5 5v14a2 2 0 0 0 2 2h14"></path>
+                                </svg>
+                            </span>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
 
                 <div className={styles.projectCard}>
                     <div className={styles.projectHero}>
@@ -416,34 +445,7 @@ export default function MainContent() {
                     </div>
                 </div>
 
-                <div className={styles.projectCard}>
-                    <div className={styles.projectHero}>
-                        <img src={ReviewHero} alt="Review Hero" className={styles.projectHeroImage} />
-                    </div>
-
-                    <div className={styles.projectMetaRow}>
-                        <span className={styles.projectPill}>React</span>
-                        <span className={styles.projectPill}>Framer</span>
-                        <span className={styles.projectPill}>MongoDB</span>
-                    </div>
-
-                    <div className={styles.projectBody}>
-                        <h3 className={styles.projectTitle}>Review Hero</h3>
-                        <p className={styles.projectDescription}>
-                            A webapp created to help students study through digital flashcards and quizzes to make learning more effective and accessible.
-                        </p>
-                        {/* <a className={styles.projectLink} href="" target="_blank" rel="noopener noreferrer">
-                            <span className={styles.projectLinkIcon} aria-hidden="true">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M14 3h7v7"></path>
-                                    <path d="M10 14L21 3"></path>
-                                    <path d="M5 5v14a2 2 0 0 0 2 2h14"></path>
-                                </svg>
-                            </span>
-                            Live Demo
-                        </a> */}
-                    </div>
-                </div>
+                
             </section>
         </main>
     );
